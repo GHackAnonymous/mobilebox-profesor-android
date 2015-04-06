@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="4dp"
+        android:src="@drawable/smartphone86"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/panel"
+        android:paddingLeft="8dp"
+        android:layout_toRightOf="@+id/imagen"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/conectado"
+        android:layout_toStartOf="@+id/conectado">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/resumen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/conectado"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:clickable="false" />
+
+</RelativeLayout>
